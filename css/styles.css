@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+	font-family: cursive;
+	color: #333;
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
+}
+/* Arrange the SECTION and the ASIDE elements side-by-side in columns */
+main {
+	display: flex;
+	flex-direction: row;
+}
+/* Make the SECTION column a bit wider than the ASIDE column */
+header,main section,footer {
+	width: 60%;
+	position: relative;
+	left: -100px;
+}
+main aside {
+	width: 40%;
+	position: relative;
+	right: -100px;
+}
+
+.toppingImg {
+	height:40px;
+	width:40px;
+}
+
+.toppingsCheckbox{
+    display: inline-block;
+}

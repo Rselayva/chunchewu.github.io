@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>HTML CSS and JS Fund. Assignment 1 | Pizza Order Webpage</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<!-- Page-level header -->
+	<header>
+		<h1>Virtual Pizza</h1>
+		<h2>Choose Your Favorite</h2>
+	</header>
+	<!-- Page-level main content -->
+	<main>
+		<form action="subscribe.php" method="GET"></form>
+		<section>
+			<h3>Order Now !!!</h3>
+			<img src="images/pepperoni.jpg" height="300px" width="400px" alt="PizzaImg" /></br></br>
+			<!-- Quantity -->
+			<label for="pizzaQty">Qty: </label>
+			<input type="number" id="pizzaQty" name="pizzaQty" placeholder="10 Maximum" style="width: 100px;" min="1"
+				max="10" /></br></br>
+			<!-- Size -->
+			<fieldset>
+				<legend>Choose Your Pizza Size: </legend>
+				<div>
+					<input type="radio" id="smallSize" name="smallSize" value="Small" />
+					<img src="images/sizesmall.png" alt="SmallPizzaImg" />
+					<label for="pizzaSize">Small(6 Slices)</label>
+				</div>
+				<div>
+					<input type="radio" id="mediumSize" name="mediumSize" value="Medium" />
+					<img src="images/sizemedium.png" alt="MediumPizzaImg" />
+					<label for="pizzaSize">Medium(8 Slices)</label>
+				</div>
+				<div>
+					<input type="radio" id="largeSize" name="largeSize" value="Large" />
+					<img src="images/sizelarge.png" alt="LargePizzaImg" />
+					<label for="pizzaSize">Large(10 Slices)</label>
+				</div>
+				<div>
+					<input type="radio" id="smallSize" name="smallSize" value="Extra-Large" />
+					<img src="images/sizexl.png" alt="XLPizzaImg" />
+					<label for="pizzaSize">Extra-Large(12 Slices)</label>
+				</div>
+			</fieldset></br>
+			<!-- Dough -->
+			<label for="dough">Dough: </label>
+			<select id="dough" name="dough">
+				<option value="RegularDough">Regular Dough</option>
+				<option value="RegularThinCrust">Regular Thin Crust</option>
+				<option value="StuffedCrust">Stuffed Crust</option>
+				<option value="RegularThickCrust">Thick Crust</option>
+			</select></br></br>
+			<!-- Toppings -->
+			<fieldset>
+				<legend>Choose Your Toppings</legend>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="broccoli" name="broccoli">
+					<label for="broccoli">Broccoli</label>
+					<img src="images/broccoli.jpg" alt="BroccoliImg" class="toppingImg">
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="mushrooms" name="mushrooms">
+					<label for="mushrooms">Fresh Mushrooms</label>
+					<img src="images/mushrooms.jpg" alt="MushroomsImg" class="toppingImg">
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="greenOlives" name="greenOlives">
+					<label for="greenOlives">Green Olives</label>
+					<img src="images/greenolives.jpg" alt="greenOlives" class="toppingImg">
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="redOnions" name="redOnions">
+					<label for="greenOlives">Red Onions</label>
+					<img src="images/redonions.jpg" alt="redOnions" class="toppingImg">
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="greenPeppers" name="greenPeppers">
+					<label for="greenOlives">Green Peppers</label>
+					<img src="images/greenpepper.jpg" alt="greenPeppers" class="toppingImg">
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="tomatoes" name="tomatoes">
+					<label for="greenOlives">Tomatoes</label>
+					<img src="images/tomato.jpg" alt="tomatoes" class="toppingImg">
+				</div>
+			</fieldset></br>
+			<!-- Extra Flavour Toppings -->
+			<fieldset>
+				<legend>Choose Your Extra Flavour Toppings</legend>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="broccoli" name="broccoli">
+					<label for="garlicSauce">Creamy Garlic Sauce Drizzle</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="hotHoney" name="hotHoney">
+					<label for="hotHoney">Hot Honey Drizzle</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="hotSauce" name="hotSauce">
+					<label for="hotSauce">Hot Sauce Drizzle</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="bbqSauce" name="bbqSauce">
+					<label for="bbqSauce">BBQ Drizzle</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="oliveOil" name="oliveOil">
+					<label for="oliveOil">Olive Oil</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="chiliPeppers" name="chiliPeppers">
+					<label for="chiliPeppers">Chili Peppers</label>
+				</div>
+				<div class="toppingsCheckbox">
+					<input type="checkbox" id="italianoSeasoning" name="italianoSeasoning">
+					<label for="italianoSeasoning">Italiano Seasoning</label>
+				</div>
+			</fieldset>
+			<!-- Special Instructions -->
+			<p>Special Instructions: </p>
+			<textarea cols="80" rows="8"></textarea></br></br>
+			<!-- Submit -->
+			<button type="submit">Place Order</button>
+			<button type="reset">Reset</button>
+
+		</section>
+		<!-- Aside section is for customer information -->
+		<aside>
+			<fieldset>
+				<legend>
+					<h4>Contact Information</h4>
+				</legend>
+				<div>
+					<!-- Delivery -->
+					<input type="radio" id="delivery" name="delivery" value="Large" />
+					<label for="pizzaSize">Delivery</label>
+					<!-- Pick Up -->
+					<input type="radio" id="pickUp" name="pickUp" value="Large" />
+					<label for="pizzaSize">Pick Up</label>
+				</div></br>
+				<div>
+					<label for="name">Name (20 characters maximum): </label>
+					<input type="text" id="name" name="name" minlength="1" style="width: 200px;" maxlength="20" required />
+				</div></br>
+				<div>
+					<label for="email">Email Address: </label>
+					<input type="email" id="email" name="email" style="width: 350px;" required />
+				</div></br>
+				<div>
+					<label for="phone">Phone Number: </label></br>
+					<input type="number" id="phone" name="phone" style="width: 200px;" required />
+				</div></br>
+				<div>
+					<label for="address">Delivery Address: </label></br>
+					<input type="text" id="address" name="address" style="width: 350px;" />
+				</div></br>
+				<div>
+					<label for="time">Delivery/Pick Up Time: </label></br>
+					<input type="datetime-local" id="time" name="time" />
+				</div></br>
+				</br>
+			</fieldset>
+		</aside>
+	</main>
+	<!-- Page-level footer -->
+	<footer>
+		<p><small>© Virtual Pizza Inc.</small></p>
+	</footer>
+</body>
+
+</html>
